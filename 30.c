@@ -3,12 +3,12 @@
 int main(){
     int month, date;
     while(scanf("%d %d", &month, &date)!=EOF){
-        switch(month){
+        switch(month){                                  //先看月份
             case 1:
-                if(date>=21)printf("Aquarius\n");
+                if(date>=21)printf("Aquarius\n");       //再看日期歸類在哪一個星座
                 else printf("Capricorn\n");
                 break;
-            case 2:
+            case 2:                                     //土法煉鋼
                 if(date>=19)printf("Pisces\n");
                 else printf("Aquarius\n");
                 break;
@@ -49,7 +49,7 @@ int main(){
                 else printf("Scorpio\n");
                 break;
             case 12:
-                if(date>=22)printf("Capricorn\n");
+                if(date>=22)printf("Capricorn\n");          //練完ㄌ
                 else printf("Sagittarius\n");
                 break;
         }
